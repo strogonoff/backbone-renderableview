@@ -68,7 +68,7 @@ class RenderableView extends Backbone.View
   Must resolve passed jQuery.Deferred objects when done.
   ###
   render_template: (dfd, opts) ->
-    $(@el).html @template(@get_template_context(opts))
+    $@el.html @template(@get_template_context(opts))
     #console.log "View render %o - %o", $(@el)?.attr('class'), @model
     dfd.resolve(opts)
 
